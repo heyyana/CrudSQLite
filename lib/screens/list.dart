@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart'; 
 import 'package:flutter/material.dart'; 
 import 'package:appcrudsqlite/data/dbCine.dart'; 
 import 'package:appcrudsqlite/screens/edit.dart'; 
@@ -75,9 +74,9 @@ class _ListCines extends State<ListCines> {
 
                         title: Text(stuone["nome"]), 
 
-                        subtitle: Text("Codigo:" + 
+                        subtitle: Text("Codigo" + 
                             stuone["roll_no"].toString() + 
-                           ", Genero: " + 
+                           ", Genero " + 
                             stuone["genero"]), 
 
                         trailing: Wrap( 
@@ -88,13 +87,13 @@ class _ListCines extends State<ListCines> {
 
                                 onPressed: () { 
 
-                                 // Navigator.push(context, MaterialPageRoute( 
+                                  Navigator.push(context, MaterialPageRoute( 
 
-                                  //    builder: (BuildContext context) { 
+                                     builder: (BuildContext context) { 
 
-                               //     return EditCines(rollno: stuone["roll_no"]); 
+                                    return EditCine(rollno: stuone["roll_no"]); 
 
-                              //    })); //navigate to edit page, pass student roll no to edit 
+                                  })); //navigate to edit page, pass student roll no to edit 
 
                                 }, 
 
