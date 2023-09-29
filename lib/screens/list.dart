@@ -74,9 +74,9 @@ class _ListCines extends State<ListCines> {
 
                         title: Text(stuone["nome"]), 
 
-                        subtitle: Text("Codigo" + 
+                        subtitle: Text("Codigo: " + 
                             stuone["roll_no"].toString() + 
-                           ", Genero " + 
+                           ", Genero: " + 
                             stuone["genero"]), 
 
                         trailing: Wrap( 

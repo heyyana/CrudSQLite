@@ -9,7 +9,7 @@ class DbFilme {
 
     var databasesPath = await getDatabasesPath();
 
-    String path = join(databasesPath, 'bdcrud.db');
+    String path = join(databasesPath, 'bdcines.db');
 
     //join is from path package
 
